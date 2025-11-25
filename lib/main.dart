@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         // Usamos las rutas definidas en AppRoutes
         routes: AppRoutes.routes,
-        initialRoute: "/",
+        initialRoute: "/splash",
         theme: ThemeData(
           colorSchemeSeed: Colors.green, // Tema adaptado a Rick and Morty
           useMaterial3: true,
