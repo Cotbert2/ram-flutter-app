@@ -57,14 +57,22 @@ class DetallePage extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text("$label:",
-              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
-          Text(value,
-              style: TextStyle(
-                fontSize: 18,
-                color: valueColor ?? Colors.black87,
-                fontWeight: FontWeight.w500,
-              )),
+          Flexible(
+            flex: 2,
+            child: Text("$label:",
+                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
+          ),
+          const SizedBox(width: 10),
+          Flexible(
+            flex: 3,
+            child: Text(value,
+                textAlign: TextAlign.end,
+                style: TextStyle(
+                  fontSize: 18,
+                  color: valueColor ?? Colors.black87,
+                  fontWeight: FontWeight.w500,
+                )),
+          ),
         ],
       ),
     );
